@@ -111,7 +111,11 @@ Our idea is original in the sense that it aims to show much more the links betwe
     - It is also possible to mouseover on the edge between two players: information is displayed with the characteristics of the matches. For instance: locations, tournaments, dates, series, courts, surfaces, rounds, winners, ranks and points of the players at the beginning of the tournament, number of games won by each player for each set, number of sets won by each player, comments, odds.
     - Inspirations: http://www.claudiobellei.com/2017/02/04/viznetworks/ ; http://bl.ocks.org/eesur/be2abfb3155a38be4de4 ; https://bl.ocks.org/steveharoz/8c3e2524079a8c440df60c1ab72b5d03 ; https://d3-graph-gallery.com/graph/interactivity_button.html ; https://sylhare.github.io/2020/06/10/Advanced-node-network-graph-d3.html
 
-- ***Tab 2*: Game roulette chance between players:**
+- ***Tab 2*: Slot Machine between 2 players:**
+	- The goal would be to implement a slot machine that chooses randomly 2 players and displays statistics about their last matches between these 2 players. 
+	- The slot machine would display basic information about the 2 players such as Name, image, nationality and rank. The statitistics shown between the two players are the number of matches played (at least >= 1), the number of wins of the 1st player, at which country and tournament they most played in.
+	- You can click on a button "SHUFFLE" that will pick 2 new players. 
+	- Some visualization inspiration https://josex2r.github.io/jQuery-SlotMachine/ & https://odhyan.com/slot/.
 
 - ***Tab 3*: World map visualisation:**
 
@@ -168,6 +172,12 @@ When we pass the mouse over a node (player), information about the player will b
 When we pass the mouse over the edge between two players, information will be displayed with the characteristics of the matches. For instance: locations, tournaments, dates, series, courts, surfaces, rounds, winners, ranks and points of the players at the beginning of the tournament, number of games won by each player for each set, number of sets won by each player, comments, odds. Inspiration: https://sylhare.github.io/2020/06/10/Advanced-node-network-graph-d3.html.
 
 <img src="https://github.com/assiaoua/plot-twist-data-viz/blob/main/img/network_edge.png" alt="network_edge" width="600"/>
+
+#### Tab2: Slot Machine
+
+The goal would be to implement a slot machine that chooses randomly 2 players and displays statistics about their last matches between these 2 players. The workflow would be the following:
+
+<img src="https://github.com/assiaoua/plot-twist-data-viz/blob/main/img/slot.png" alt="slot" width="1100"/>
 
 #### Tab3: World map visualisation
 
