@@ -151,33 +151,33 @@ Our idea is original in the sense that it aims to show much more the links betwe
 
 The first visualization will be a network that connects players who have played a match. A node corresponds to a player (with the picture of the player in the node). The bigger the node, the more matches the player has made. Inspiration: http://www.claudiobellei.com/2017/02/04/viznetworks/ and http://bl.ocks.org/eesur/be2abfb3155a38be4de4.
 
-<img src="https://github.com/assiaoua/plot-twist-data-viz/blob/main/img/network.png" alt="network" width="1100"/>
+<img src="/img/network.png" alt="network" width="1100"/>
 
 It will be possible to move the nodes with the mouse to make the network move.
 
-<img src="https://github.com/assiaoua/plot-twist-data-viz/blob/main/img/network_moving.png" alt="network_moving" width="200"/>
+<img src="/img/network_moving.png" alt="network_moving" width="200"/>
 
 It will be possible to select some specific data with buttons to apply filters according to different variables. For instance: Location, Tournament, Serie, Court, Surface, Players ranking range... Inspiration: https://d3-graph-gallery.com/graph/interactivity_button.html ; https://bl.ocks.org/steveharoz/8c3e2524079a8c440df60c1ab72b5d03.
 
-<img src="https://github.com/assiaoua/plot-twist-data-viz/blob/main/img/network_choices.png" alt="network_choices" width="200"/>
+<img src="/img/network_choices.png" alt="network_choices" width="200"/>
 
 A slider will also enable to choose the year. Inspiration: http://www.claudiobellei.com/2017/02/04/viznetworks/.
 
-<img src="https://github.com/assiaoua/plot-twist-data-viz/blob/main/img/network_curseur.png" alt="network_curseur" width="300"/>
+<img src="/img/network_curseur.png" alt="network_curseur" width="300"/>
 
 When we pass the mouse over a node (player), information about the player will be displayed with for instance: the number of matches played in ATP by series per year, the number of wins and the number of losses according to the year/the tournament/the type of court/the type of surface, his nationality, his weight, his year of start as a pro and his playing hand, a list with his main opponents. Inspiration: https://sylhare.github.io/2020/06/10/Advanced-node-network-graph-d3.html.
 
-<img src="https://github.com/assiaoua/plot-twist-data-viz/blob/main/img/network_joueur.png" alt="network_joueur" width="400"/>
+<img src="/img/network_joueur.png" alt="network_joueur" width="400"/>
 
 When we pass the mouse over the edge between two players, information will be displayed with the characteristics of the matches. For instance: locations, tournaments, dates, series, courts, surfaces, rounds, winners, ranks and points of the players at the beginning of the tournament, number of games won by each player for each set, number of sets won by each player, comments, odds. Inspiration: https://sylhare.github.io/2020/06/10/Advanced-node-network-graph-d3.html.
 
-<img src="https://github.com/assiaoua/plot-twist-data-viz/blob/main/img/network_edge.png" alt="network_edge" width="600"/>
+<img src="/img/network_edge.png" alt="network_edge" width="600"/>
 
 #### Tab2: Slot Machine
 
 The goal would be to implement a slot machine that chooses randomly 2 players and displays statistics about their last matches between these 2 players. The workflow would be the following:
 
-<img src="https://github.com/assiaoua/plot-twist-data-viz/blob/main/img/slot.png" alt="slot" width="1100"/>
+<img src="/img/slot.png" alt="slot" width="1100"/>
 
 #### Tab3: World map visualisation
 
@@ -217,7 +217,7 @@ Map in the main screen (see layout of the general website) + a cursor to indicat
 
 By default, the time is going forward and loops at the end you can displace the cursor to get to a precise time
 
-<img src="https://github.com/assiaoua/plot-twist-data-viz/blob/main/img/map_maquette.png" alt="maquette" width="1200"/>
+<img src="/img/map_maquette.png" alt="maquette" width="1200"/>
 
 #### Tab4: Bar chart race
 
