@@ -28,7 +28,7 @@ Each line contains:
 - Information about the players (winner, loser, nationalities, world ranking, ATP points etc)
 - Physical information about the players (playing hand, weights, height etc)
 - Betting odds information (odds of match loser and winner from different online platforms)
-- 
+
 For clarity, we did not present all of the 54 columns. The full descriptions can be found in the "milestone1.ipynb".
 
 ### Problematic
