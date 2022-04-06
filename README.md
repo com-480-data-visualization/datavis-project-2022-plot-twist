@@ -111,13 +111,7 @@ Our idea is original in the sense that it aims to show much more the links betwe
     - It is also possible to mouseover on the edge between two players: information is displayed with the characteristics of the matches. For instance: locations, tournaments, dates, series, courts, surfaces, rounds, winners, ranks and points of the players at the beginning of the tournament, number of games won by each player for each set, number of sets won by each player, comments, odds.
     - Inspirations: http://www.claudiobellei.com/2017/02/04/viznetworks/ ; http://bl.ocks.org/eesur/be2abfb3155a38be4de4 ; https://bl.ocks.org/steveharoz/8c3e2524079a8c440df60c1ab72b5d03 ; https://d3-graph-gallery.com/graph/interactivity_button.html ; https://sylhare.github.io/2020/06/10/Advanced-node-network-graph-d3.html
 
-- ***Tab 2*: Slot Machine between 2 players:**
-	- The goal would be to implement a slot machine that chooses randomly 2 players and displays statistics about their last matches between these 2 players. 
-	- The slot machine would display basic information about the 2 players such as Name, image, nationality and rank. The statitistics shown between the two players are the number of matches played (at least >= 1), the number of wins of the 1st player, at which country and tournament they most played in.
-	- You can click on a button "SHUFFLE" that will pick 2 new players. 
-	- Some visualization inspiration https://josex2r.github.io/jQuery-SlotMachine/ & https://odhyan.com/slot/.
-
-- ***Tab 3*: World map visualisation:**
+- ***Tab 2*: World map visualisation:**
 
     - The goal of this animated visualization is to picture the geographical movement of a tennis player going from tournement to tournement. 
     - Each player is represented by a colored circle on a world map, the movement of the circle follows the cities the player visited during the tournements present in the database.
@@ -126,19 +120,25 @@ Our idea is original in the sense that it aims to show much more the links betwe
     - Inpiration of the visualization (A flow where a colored icon correspond to one person, we added the geographical component): https://www.nytimes.com/interactive/2018/03/19/upshot/race-class-white-and-black-men.html 
 
 
-- ***Tab 4*: Bart Charts moving over time:**
+- ***Tab 3*: Bart Charts moving over time:**
     - Two bart charts on the same line with the bars moving as the years go by.
     - A first bart chart to show the evolution of the countries ranking in terms of number of wins or points or players etc...
     - A second bart chart to show the evolution of the players in terms of number of wins or points or number of matches etc...
     - Button to apply filters according to different variables: Series, Court, Surface.
     - Inspiration: https://observablehq.com/@d3/bar-chart-race  
 
+- ***Tab 4*: Slot Machine between 2 players (optional, to be implemented if we have time):**
+	- The goal would be to implement a slot machine that chooses randomly 2 players and displays statistics about their last matches between these 2 players. 
+	- The slot machine would display basic information about the 2 players such as Name, image, nationality and rank. The statitistics shown between the two players are the number of matches played (at least >= 1), the number of wins of the 1st player, at which country and tournament they most played in.
+	- You can click on a button "SHUFFLE" that will pick 2 new players. 
+	- Some visualization inspiration https://josex2r.github.io/jQuery-SlotMachine/ & https://odhyan.com/slot/.
+
 - ***(Side ideas for the site)***:
     - Make the loading symbol in the form of a spinning tennis ball.
     - Make a mascot in the form of a tennis racket to explain the site's features at the beginning.
     - Make symbols for the selection of variables, a small cup for the winner, flags for the nationalities, etc...
 
-*NB : The dataset is extracted from the Kaggle database [ATP tennis data] (https://www.kaggle.com/datasets/edoardoba/atp-tennis-data) and only a "Djokovic vs Nadal quick analysis" is presented as analysis of this data.*
+*NB : The dataset is extracted from the Kaggle database [ATP tennis data](https://www.kaggle.com/datasets/edoardoba/atp-tennis-data) and only a "Djokovic vs Nadal quick analysis" is presented as analysis of this data.*
 
 
 ## Milestone 2 (7th May, 5pm)
@@ -147,7 +147,7 @@ Our idea is original in the sense that it aims to show much more the links betwe
 
 ### Visualisation Descriptions
 
-#### Tab1: Network between players
+#### Tab 1: Network between players
 
 The first visualization will be a network that connects players who have played a match. A node corresponds to a player (with the picture of the player in the node). The bigger the node, the more matches the player has made. Inspiration: http://www.claudiobellei.com/2017/02/04/viznetworks/ and http://bl.ocks.org/eesur/be2abfb3155a38be4de4.
 
@@ -173,13 +173,7 @@ When we pass the mouse over the edge between two players, information will be di
 
 <img src="/img/network_edge.png" alt="network_edge" width="600"/>
 
-#### Tab2: Slot Machine
-
-The goal would be to implement a slot machine that chooses randomly 2 players and displays statistics about their last matches between these 2 players. The workflow would be the following:
-
-<img src="/img/slot.png" alt="slot" width="1100"/>
-
-#### Tab3: World map visualisation
+#### Tab 2: World map visualisation
 
 ##### Librairies
 
@@ -219,7 +213,7 @@ By default, the time is going forward and loops at the end you can displace the 
 
 <img src="/img/map_maquette.png" alt="maquette" width="1200"/>
 
-#### Tab4: Bar chart race
+#### Tab 3: Bar chart race
 
 * Classical bar chart race
 * Options :
@@ -229,6 +223,12 @@ By default, the time is going forward and loops at the end you can displace the 
 
 Cursor at the bottom to define the time
 
+
+#### Tab 4: Slot Machine (optional, to be implemented if we have time)
+
+The goal would be to implement a slot machine that chooses randomly 2 players and displays statistics about their last matches between these 2 players. The workflow would be the following:
+
+<img src="/img/slot.png" alt="slot" width="1100"/>
 
 ## Milestone 3 (4th June, 5pm)
 
