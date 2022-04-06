@@ -21,16 +21,13 @@ Please, fill the following sections about your project.
 
 We chose to work with the ATP Tennis with Betting Odds found on [Kaggle](https://www.kaggle.com/datasets/edoardoba/atp-tennis-data/metadata). 
 
-The dataset consists of 36 120 matches summaries.
-Each line contains:
-- Information about the tournament (name, location etc)
-- Information about the match (surface, date, rounds, comment etc)
-- Information about the players (winner, loser, nationnalities, world ranking, ATP points etc)
-- Physical information about the players (playing hand, weights, height etc)
-- Betting odds informations (odds of match loser and winner from different online platforms)
-
-For clarity, we did not presented all of the 54 columns. The full descriptions can be found in the "milestone1.ipynb".
-
+The dataset consists of 36 120 matches summaries. Each line contains:
+-Information about the tournament (name, location etc)
+-Information about the match (surface, date, rounds, comment etc)
+-Information about the players (winner, loser, nationalities, world ranking, ATP points etc)
+-Physical information about the players (playing hand, weights, height etc)
+-Betting odds information (odds of match loser and winner from different online platforms)
+For clarity, we did not present all of the 54 columns. The full descriptions can be found in the "milestone1.ipynb".
 
 ### Problematic
 
