@@ -14,7 +14,6 @@
 
 This is a preliminary milestone to let you set up goals for your final project and assess the feasibility of your ideas.
 Please, fill the following sections about your project.
-
 *(max. 2000 characters per section)*
 
 ### Dataset
@@ -23,10 +22,10 @@ We chose to work with the ATP Tennis with Betting Odds found on [Kaggle](https:/
 
 The dataset consists of 36 120 matches summaries. 
 Each line contains:
-- Information about the tournament (name, location etc)
-- Information about the match (surface, date, rounds, comment etc)
-- Information about the players (winner, loser, nationalities, world ranking, ATP points etc)
-- Physical information about the players (playing hand, weights, height etc)
+- Information about the tournament (name, location, etc...)
+- Information about the match (surface, date, rounds, comment, etc...)
+- Information about the players (winner, loser, nationalities, world ranking, ATP points, etc...)
+- Physical information about the players (playing hand, weights, height, etc...)
 - Betting odds information (odds of match loser and winner from different online platforms)
 
 For clarity, we did not present all of the 54 columns. The full descriptions can be found in the "milestone1.ipynb".
