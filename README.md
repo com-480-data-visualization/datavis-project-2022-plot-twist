@@ -21,61 +21,16 @@ Please, fill the following sections about your project.
 
 We chose to work with the ATP Tennis with Betting Odds found on [Kaggle](https://www.kaggle.com/datasets/edoardoba/atp-tennis-data/metadata). 
 
-Description of the dataset:
-- ATP: Tournament number
-- Location: Venue of tournament
-- Tournament: Name of tournament
-- Date: Date of match
-- Series: Name of ATP tennis series
-- Court: Type of court
-- Surface: Type of surface
-- Round: Round of match
-- Best of: Maximum number of sets playable in match
-- Winner: Match winner
-- Loser: Match loser
-- WRank: ATP Entry ranking of the match winner as of the start of the tournament
-- LRank: ATP Entry ranking of the match loser as of the start of the tournament
-- WPts: ATP Entry points of the match winner as of the start of the tournament
-- LPts: ATP Entry points of the match loser as of the start of the tournament
-- W1: Number of games won in 1st set by match winner
-- L1: Number of games won in 1st set by match loser
-- W2: Number of games won in 2nd set by match winner
-- L2: Number of games won in 2nd set by match loser
-- W3: Number of games won in 3rd set by match winner
-- L3: Number of games won in 3rd set by match loser
-- W4: Number of games won in 4th set by match winner
-- L4: Number of games won in 4th set by match loser
-- W5: Number of games won in 5th set by match winner
-- L5: Number of games won in 5th set by match loser
-- Wsets: Number of sets won by match winner
-- Lsets: Number of sets won by match loser
-- Comment: Comment on the match (Completed, won through retirement of loser, or via Walkover)
-- B365W: Bet365 odds of match winner
-- B365L: Bet365 odds of match loser
-- PSW: Bet&Win odds of match winner
-- PSL: Bet&Win odds of match loser
-- MaxW: Maximum odds of match winner
-- MaxL: Maximum odds of match loser
-- AvgW: Average odds of match winner
-- AvgL: Average odds of match loser
-- EXW: Expekt odds of match winner
-- EXL: Expekt odds of match loser
-- LBW: Ladbrokes odds of match winner
-- LBL: Ladbrokes odds of match loser
-- SJW: Stan James odds of match winner
-- SJL: Stan James odds of match loser
-- UBW: Unibet odds of match winner
-- UBL: Unibet odds of match loser
-- pl1_flag: Winners Nationality
-- pl1_year_pro: Winners starting year as a pro
-- pl1_weight: Winners weight
-- pl1_height: Winners height
-- pl1_hand: Winners playing hand
-- pl2_flag: Losers Nationality
-- pl2_year_pro: Losers starting year as a pro
-- pl2_weight: Winners weight
-- pl2_height: Losers height
-- pl2_hand: Losers playing hand
+The dataset consists of 36 120 matches summaries.
+Each line contains:
+- Information about the tournament (name, location etc)
+- Information about the match (surface, date, rounds, comment etc)
+- Information about the players (winner, loser, nationnalities, world ranking, ATP points etc)
+- Physical information about the players (playing hand, weights, height etc)
+- Betting odds informations (odds of match loser and winner from different online platforms)
+
+For clarity, we did not presented all of the 54 columns. The full descriptions can be found in the "milestone1.ipynb".
+
 
 ### Problematic
 
