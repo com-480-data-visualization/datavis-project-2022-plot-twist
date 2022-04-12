@@ -124,45 +124,27 @@ When we pass the mouse over a node (player), information about the player will b
 
 When we pass the mouse over the edge between two players, information will be displayed with the characteristics of the matches. For instance: locations, tournaments, dates, series, courts, surfaces, rounds, winners, ranks and points of the players at the beginning of the tournament, number of games won by each player for each set, number of sets won by each player, comments, odds. Inspiration: https://sylhare.github.io/2020/06/10/Advanced-node-network-graph-d3.html.
 
+Maquette layout
+
 <img src="/img/network_edge.png" alt="network_edge" width="600"/>
 
 #### Tab 2: World map visualisation
 
-##### Librairies
 
-https://en.wikipedia.org/wiki/Azimuthal_equidistant_projection goal of the projection
+The second visualisation will be a map of the world. The map will contain colored moving circles and fixed points.
 
-http://proj4js.org/ for messing with projection
+Each circle corresponds to a player from the dataset, the movement of the circle on the map corresponds to the path throught the cities where the player participate in tournament. 
+The fixed point corresponds to the cities where matches are played, and information about the name of the tournaments it hosts.
+New players appear with a fade in at the location of their first tournament, and similarly disappear with a fade out after the last match.
 
-https://observablehq.com/@d3/azimuthal-equidistant
+The circle are colored according to a color scale from yellow to white, logarithmically linked to their world rank. The more yellow, the higher ranked they are (the color change during time, after matches).
 
-https://github.com/d3/d3-geo-projection to create the map
+The user can interact with a slider that specifies the date. By default, the slider is moving at constant speed, but the user can fixe the slider at any time to investigate precise dynamics.
 
-https://github.com/d3/d3-geo/blob/main/README.md#geoInterpolate interpolation between different points (the tournaments)
+The broad goal of the visualization is to visualize the geographical movements of the whole community of professional tennis player throught the seasons.
 
-##### Dynamics
-
--> each point is at the tournament the day of his match. Between two matches, he goes from Tournament A to Tournament B at constant speed.
-
-  
-New player appear with a fade in at the first tournament location, disappear after the last match
-
-##### Color
-color palette of yellow to white. The more yellow, the high ranked they are (the color change during time, after matches)
-
-  
-
-Add a color scale for mapping color to ranking
-
-##### Map
-
-Location of the tournament added with tags name of the city (+ tournament name, we have to see if we have many tournaments in the same city)
-
-##### Layout
-
-Map in the main screen (see layout of the general website) + a cursor to indicate the date (as in OurWorldInData)
-
-By default, the time is going forward and loops at the end you can displace the cursor to get to a precise time
+More precisely, we want to reveal patterns at different time and geographical scale, for instance, inside a given year, what is the usual schedule of tournaments for players? Can we observe that the participants of tournament share a similar ranking, or are the levels of player uniformly distributed?
+On the time scale of several years, this visualisation can enbale us to visualize the emergence of new tournements, or the evolution of their popularity.
 
 <img src="/img/map_maquette.png" alt="maquette" width="1200"/>
 
