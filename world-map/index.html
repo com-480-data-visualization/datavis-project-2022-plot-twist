@@ -1,0 +1,93 @@
+
+<!doctype html>
+<html lang=en>
+<head>
+    <meta charset=utf-8>
+    <title>Tennis World Map</title>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="http://d3js.org/topojson.v0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-array@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-geo@3"></script>
+</head>
+    <body>
+    <!-- <p>I'm the content</p>
+    <p>Look at me</p>
+    <p id="par2">Yeah me!</p>
+    <p class="yo">Yo</p>
+    <p class="yo">Hello</p>
+
+    <svg height="500" width="500">
+        <circle cx="100" cy="100" r="50"></circle>
+        <circle cx="200" cy="200" r="50"></circle>
+        <circle cx="100" cy="400" r="30"></circle>
+    </svg> -->
+
+
+    <!-- <script type="text/javascript">
+        // Select by tag
+        let p = d3.select("p");
+        p.style("color", "blue");
+        // Select by ID
+        p = d3.select("#par2");
+        p.style("color", "green");
+        // Select by class
+        p = d3.selectAll(".yo");
+        p.style("color", "red");
+
+        const radii = [10, 20, 50]; // radius plurar form
+        let circles = d3.selectAll("circle")
+        .data(radii)
+        .attr('cx', (d, i) => 110 * (i+1))
+        .attr('cy', (d, i) => 50 * (i+1))
+        .attr('r', (d, i) => d) // 10, 20, 50
+        .style("fill", "blue");
+    </script> -->
+
+
+    </body>
+
+    <script type="text/javascript">
+        var width = 1200;
+        var height = 600;
+  
+        var projection = d3.geo.mercator();
+        
+        var svg = d3.select("body").append("svg")
+            .attr("width", width)
+            .attr("height", height);
+        var path = d3.geo.path()
+            .projection(projection);
+        var g = svg.append("g");
+        
+        d3.json("world-110m2.json", function(error, topology) {
+            g.selectAll("path")
+              .data(topojson.object(topology, topology.objects.countries)
+                  .geometries)
+            .enter()
+              .append("path")
+              .attr("d", path)
+        });
+
+        const trajectories = [[(0,0), (20,0), (45,3), (90,67)], 
+                              [(10,0), (25,0), (43,3), (95,67)],
+                              [(15,0), (21,3), (42,4), (98,47)]
+                            ];
+
+
+        var geoJsonPoint = {
+            type: "Point",
+            coordinates: (45.,6.),
+        };
+        
+        var pathGenerator = d3.geoPath(projection);
+        pathGenerator.path(geoJsonPoint);
+
+      </script>
+
+
+
+
+</html>
+
+
+
