@@ -111,17 +111,13 @@ We describe the four independent pieces of our product below. The three first on
 
 The first visualization will be a network that connects players who have played a match. A node corresponds to a player (with the picture of the player in the node). The bigger the node, the more matches the player has made. Inspiration: http://www.claudiobellei.com/2017/02/04/viznetworks/ and http://bl.ocks.org/eesur/be2abfb3155a38be4de4.
 
-<img src="/img/network.png" alt="network" width="1100"/>
+<img src="/img/network_select.png" alt="network_select" width="1100"/>
 
 It will be possible to move the nodes with the mouse to make the network move.
 
 <img src="/img/network_moving.png" alt="network_moving" width="200"/>
 
-It will be possible to select some specific data with buttons to apply filters according to different variables. For instance: Location, Tournament, Serie, Court, Surface, Players ranking range... Inspiration: https://d3-graph-gallery.com/graph/interactivity_button.html ; https://bl.ocks.org/steveharoz/8c3e2524079a8c440df60c1ab72b5d03.
-
-<img src="/img/network_choices.png" alt="network_choices" width="200"/>
-
-A slider will also enable to choose the year. Inspiration: http://www.claudiobellei.com/2017/02/04/viznetworks/.
+A slider will also enable to choose the year or the range of Winners rank. Inspiration: http://www.claudiobellei.com/2017/02/04/viznetworks/.
 
 <img src="/img/network_curseur.png" alt="network_curseur" width="300"/>
 
@@ -131,9 +127,11 @@ When we pass the mouse over a node (player), information about the player will b
 
 When we pass the mouse over the edge between two players, information will be displayed with the characteristics of the matches. For instance: locations, tournaments, dates, series, courts, surfaces, rounds, winners, ranks and points of the players at the beginning of the tournament, number of games won by each player for each set, number of sets won by each player, comments, odds. Inspiration: https://sylhare.github.io/2020/06/10/Advanced-node-network-graph-d3.html.
 
-Maquette layout
-
 <img src="/img/network_edge.png" alt="network_edge" width="600"/>
+
+The courses on "web development", "Javascript", "D3.js" and "interactive" were useful to build this visualization.
+
+_For the moment a minimal version is provided for milestone 2. Two problems remain here and are being debugged: the disappearance of the nodes after a while and the visualization that goes out of the frame. Also the information about links, the images in nodes and the slider for winners rank are being implemented and will be provided later. The case of images is particularly complex because it is complicated to automate correctly, so it is not part of the minimum product and remains an option for the future._
 
 #### Tab 2: World map visualisation
 The second visualization will be a map of the world. The map will contain colored moving circles and fixed points.
