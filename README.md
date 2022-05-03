@@ -149,10 +149,10 @@ The broad goal of the visualization is to visualize the geographical movements o
 More precisely, we want to reveal patterns at different times and geographical scales, for instance, inside a given year, what is the usual schedule of tournaments for players? Can we observe that the participants of the tournament share a similar ranking, or are the levels of players uniformly distributed?
 On a time scale of several years, this visualization can enable us to visualize the emergence of new tournaments or the evolution of their popularity.
 
-We provided a first minimal working example of the visualization. There are further details to implement:
+We provided a first minimal working example of the visualization. There are further details to implement, test different alternative and select one. These include:
 * Adding information about the tournaments.
-* How to deal with slow points that seem fixed. We plan to make these circles transparent and increase their opacity once they are near their final position.
-* Where to place the zoomed-in map of Europe. And how to deal with zoom in general.
+* Dealing with slow points that seem fixed. We plan to make these circles transparent and increase their opacity once they are near their final position.
+* The placement of the zoomed-in map of Europe. Dealing with zoom in general.
 * Optionally, add more interaction such as an option to select players based on different criteria such as their nationalities for instance. This could also be displaying information about a player by hovering over a  circle.
 * Optionally, we could try to add a trace for some of the points to make the movement easier to visualize as a whole, essentially turning the visualization into an animated flow map.
 
@@ -160,7 +160,7 @@ An image illutrating the visualization:
 <img src="/img/map_maquette.png" alt="maquette" width="1200"/>
 The projection we used was the Winkel tripel. We didn't choose the polar azimuthal equidistant projection, even if it would have reduced the teleportation at the border. We thought that users would not have been familiar with it, and would have been too confused to precisely understand the many movements happening at the same time. 
 
-We used `d3` as the main visualization tool, and the `d3-geo` package to deal with geographical interpolation and projection. Moreover, the lectures on maps, colors perception, interaction, "designing viz" and "do and don't in viz" were all useful to design this visualization.
+We used `d3` as the main visualization tool, and the `d3-geo` package to deal with geographical interpolation and projection. To ease the development, we used an `òbservablehq` notebook. Moreover, the lectures on maps, colors perception, interaction, "designing viz" and "do and don't in viz" were all useful to design this visualization.
 
 #### Tab 3: Bar chart race
 
