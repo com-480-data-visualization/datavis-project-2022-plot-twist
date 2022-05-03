@@ -130,7 +130,7 @@ Maquette layout
 
 The courses on "web development", "Javascript", "D3.js" and "interactive" were useful to build this visualization.
 
-For the moment a minimal version is provided for milestone 2. Two problems remain here and are being debugged: the disappearance of the nodes after a while and the visualization that goes out of the frame. Also the information about links, images and a selection panel are being implemented and will be provided later. The case of images is particularly complex because it is complicated to automate correctly, so it is not part of the minimum product and remains an option for the future.
+_For the moment a minimal version is provided for milestone 2. Two problems remain here and are being debugged: the disappearance of the nodes after a while and the visualization that goes out of the frame. Also the information about links, images and a selection panel are being implemented and will be provided later. The case of images is particularly complex because it is complicated to automate correctly, so it is not part of the minimum product and remains an option for the future._
 
 #### Tab 2: World map visualisation
 
