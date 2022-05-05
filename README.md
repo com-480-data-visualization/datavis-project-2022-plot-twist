@@ -184,6 +184,10 @@ The goal would be to implement a slot machine that chooses randomly 2 players an
 
 <img src="/img/slot.png" alt="slot" width="1100"/>
 
+### Functional project prototype review
+
+[Website](https://assiaoua.github.io/tennis-data-story/)
+
 ## Milestone 3 (4th June, 5pm)
 
 **80% of the final grade**
