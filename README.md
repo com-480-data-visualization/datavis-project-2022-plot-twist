@@ -150,18 +150,23 @@ On the time scale of several years, this visualisation can enbale us to visualiz
 
 #### Tab 3: Bar chart race
 
-* Classical bar chart race
-* Options :
-	 * **Bars** per country / per players
-	
-	 * **Metrics** Number of victories, number of ATP points (= ranking for players, sum for countries)
+* Two bar charts one represeting the country ranking per year (accumulated number of match wins) and another for the players ranking with respect to their accumulated ATP points per year.
 
-Cursor at the bottom to define the time
+* Minimal Viable Product :
+    * Simple bar chart race with the year advancing in the bottom right corner
+    * Different colors for the different entities (countries / players)
 
+* Further developments:
+    * Add a timeline for the years so we can select the year of interest.
+    * Add a filter to select different variables: Series, Court, Surface. 
+    * For the countries, another metric that can be tested is the number of matches won divided by the number of matches played.
+    * (Optional) Test to see if a fixed scaling instead of moving one is more aesthetically pleasing.
+
+The courses concerning "Design for Data Viz", "Color Pereception" "Javascript", "D3.js" and "Interacction" were used to help build this visualization. To ease the development, we used an òbservablehq notebook.
 
 #### Tab 4: Slot Machine (optional, to be implemented if we have time)
 
-The goal would be to implement a slot machine that chooses randomly 2 players and displays statistics about their last matches between these 2 players. The workflow would be the following:
+The goal would be to implement a slot machine that chooses randomly 2 players and displays statistics about their last matches between these 2 players. There is no MVP for this tab as it is a further development of our website. The courses concerning "Design for Data Viz", "Color Pereception" "Javascript", "D3.js" and "Interacction" were used to help build this visualization. 
 
 <img src="/img/slot.png" alt="slot" width="1100"/>
 
