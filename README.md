@@ -180,7 +180,7 @@ The courses concerning "Design for Data Viz", "Color Pereception" "Javascript", 
 
 #### Tab 4: Slot Machine (optional, to be implemented if we have time)
 
-The goal would be to implement a slot machine that chooses randomly 2 players and displays statistics about their last matches between these 2 players. There is no MVP for this tab as it is a further development of our website. The courses concerning "Design for Data Viz", "Color Pereception" "Javascript", "D3.js" and "Interacction" were used to help build this visualization. 
+The goal would be to implement a slot machine that chooses randomly 2 players and displays statistics about their last matches between these 2 players. There is no MVP for this tab as it is an optional and further development of our website. The courses concerning "Design for Data Viz", "Color Pereception" "Javascript", "D3.js" and "Interacction" were used to help build this visualization. 
 
 <img src="/img/slot.png" alt="slot" width="1100"/>
 
