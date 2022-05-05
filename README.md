@@ -98,23 +98,26 @@ Our idea is original in the sense that it aims to show much more the links betwe
 
 **10% of the final grade**
 
+
+Our final product will take the form of a website. On the principal page, animated videos of the visualizations will be shown, and the user could select one by clicking on them. No particular order will be privileged.
+We plan to include a minimal amount of text on each page, just enough to let the user explore the data by him or herself.
+
+We describe the four independent pieces of our product below. The three first ones are core to our project, while the fourth is optional. Furthermore, in each of the descriptions, we shared the features of the visualization necessary and possible extensions.
+
+
 ### Visualisation Descriptions
 
 #### Tab 1: Network between players
 
 The first visualization will be a network that connects players who have played a match. A node corresponds to a player (with the picture of the player in the node). The bigger the node, the more matches the player has made. Inspiration: http://www.claudiobellei.com/2017/02/04/viznetworks/ and http://bl.ocks.org/eesur/be2abfb3155a38be4de4.
 
-<img src="/img/network.png" alt="network" width="1100"/>
+<img src="/img/network_select.png" alt="network_select" width="1100"/>
 
 It will be possible to move the nodes with the mouse to make the network move.
 
 <img src="/img/network_moving.png" alt="network_moving" width="200"/>
 
-It will be possible to select some specific data with buttons to apply filters according to different variables. For instance: Location, Tournament, Serie, Court, Surface, Players ranking range... Inspiration: https://d3-graph-gallery.com/graph/interactivity_button.html ; https://bl.ocks.org/steveharoz/8c3e2524079a8c440df60c1ab72b5d03.
-
-<img src="/img/network_choices.png" alt="network_choices" width="200"/>
-
-A slider will also enable to choose the year. Inspiration: http://www.claudiobellei.com/2017/02/04/viznetworks/.
+A slider will also enable to choose the year or the range of Winners rank. Inspiration: http://www.claudiobellei.com/2017/02/04/viznetworks/.
 
 <img src="/img/network_curseur.png" alt="network_curseur" width="300"/>
 
@@ -124,29 +127,40 @@ When we pass the mouse over a node (player), information about the player will b
 
 When we pass the mouse over the edge between two players, information will be displayed with the characteristics of the matches. For instance: locations, tournaments, dates, series, courts, surfaces, rounds, winners, ranks and points of the players at the beginning of the tournament, number of games won by each player for each set, number of sets won by each player, comments, odds. Inspiration: https://sylhare.github.io/2020/06/10/Advanced-node-network-graph-d3.html.
 
-Maquette layout
-
 <img src="/img/network_edge.png" alt="network_edge" width="600"/>
 
+The courses on "web development", "Javascript", "D3.js" and "interactive" were useful to build this visualization.
+
+_For the moment a minimal version is provided for milestone 2. Two problems remain here and are being debugged: the disappearance of the nodes after a while and the visualization that goes out of the frame. Also the information about links, the images in nodes and the slider for winners rank are being implemented and will be provided later. The case of images is particularly complex because it is complicated to automate correctly, so it is not part of the minimum product and remains an option for the future._
+
 #### Tab 2: World map visualisation
+The second visualization will be a map of the world. The map will contain colored moving circles and fixed points.
 
-
-The second visualisation will be a map of the world. The map will contain colored moving circles and fixed points.
-
-Each circle corresponds to a player from the dataset, the movement of the circle on the map corresponds to the path throught the cities where the player participate in tournament. 
+Each circle corresponds to a player from the dataset, the movement of the circle on the map corresponds to the path through the cities where the player participated in matches. 
 The fixed point corresponds to the cities where matches are played, and information about the name of the tournaments it hosts.
-New players appear with a fade in at the location of their first tournament, and similarly disappear with a fade out after the last match.
+New players appear with a fade-in at the location of their first tournament and similarly disappear with a fade-out after the last match.
 
-The circle are colored according to a color scale from yellow to white, logarithmically linked to their world rank. The more yellow, the higher ranked they are (the color change during time, after matches).
+The circles are colored according to a color scale, linked to their rank (the color change during time, after matches when the rank is updated).
 
-The user can interact with a slider that specifies the date. By default, the slider is moving at constant speed, but the user can fixe the slider at any time to investigate precise dynamics.
+The user can interact with a slider that specifies the date. By default, the slider is moving at a constant speed, but the user can fix the slider at any time to investigate precise dynamics.
 
-The broad goal of the visualization is to visualize the geographical movements of the whole community of professional tennis player throught the seasons.
+The broad goal of the visualization is to visualize the geographical movements of the whole community of professional tennis players through the seasons.
 
-More precisely, we want to reveal patterns at different time and geographical scale, for instance, inside a given year, what is the usual schedule of tournaments for players? Can we observe that the participants of tournament share a similar ranking, or are the levels of player uniformly distributed?
-On the time scale of several years, this visualisation can enbale us to visualize the emergence of new tournements, or the evolution of their popularity.
+More precisely, we want to reveal patterns at different times and geographical scales, for instance, inside a given year, what is the usual schedule of tournaments for players? Can we observe that the participants of the tournament share a similar ranking, or are the levels of players uniformly distributed?
+On a time scale of several years, this visualization can enable us to visualize the emergence of new tournaments or the evolution of their popularity.
 
+We provided a first minimal working example of the visualization. There are further details to implement, test different alternative and select one. These include:
+* Adding information about the tournaments.
+* Dealing with slow points that seem fixed. We plan to make these circles transparent and increase their opacity once they are near their final position.
+* The placement of the zoomed-in map of Europe. Dealing with zoom in general.
+* Optionally, add more interaction such as an option to select players based on different criteria such as their nationalities for instance. This could also be displaying information about a player by hovering over a  circle.
+* Optionally, we could try to add a trace for some of the points to make the movement easier to visualize as a whole, essentially turning the visualization into an animated flow map.
+
+An image illutrating the visualization:
 <img src="/img/map_maquette.png" alt="maquette" width="1200"/>
+The projection we used was the Winkel tripel. We didn't choose the polar azimuthal equidistant projection, even if it would have reduced the teleportation at the border. We thought that users would not have been familiar with it, and would have been too confused to precisely understand the many movements happening at the same time. 
+
+We used `d3` as the main visualization tool, and the `d3-geo` package to deal with geographical interpolation and projection. To ease the development, we used an `òbservablehq` notebook. Moreover, the lectures on maps, colors perception, interaction, "designing viz" and "do and don't in viz" were all useful to design this visualization.
 
 #### Tab 3: Bar chart race
 
