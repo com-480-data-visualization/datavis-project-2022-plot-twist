@@ -186,7 +186,7 @@ The goal would be to implement a slot machine that chooses randomly 2 players an
 
 ### Functional project prototype review
 
-[Website](https://assiaoua.github.io/tennis-data-story/)
+[Website](https://assiaoua.github.io/tennis-data-story/) | [Github](https://github.com/assiaoua/tennis-data-story) linked to the website
 
 ## Milestone 3 (4th June, 5pm)
 
