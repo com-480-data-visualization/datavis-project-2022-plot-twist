@@ -131,7 +131,8 @@ When we pass the mouse over the edge between two players, information will be di
 
 The courses on "web development", "Javascript", "D3.js" and "interactive" were useful to build this visualization. The future "graph" course could also be useful.
 
-_*For the moment this visualization is being debugged, so it is not provided in the skeleton of the site but will be present in the final product. In addition, the case of images is particularly complex so it is not part of the minimum product and remains an option for the future.*_
+_For the moment this visualization is being debugged, so it is not provided in the skeleton of the site but will be present in the final product. In addition, the case of images is particularly complex so it is not part of the minimum product and remains an option for the future.  
+For information, the first versions of the html/css/js files are provided in the "tab1_network" folder._
 
 #### Tab 2: World map visualisation
 The second visualization will be a map of the world. The map will contain colored moving circles and fixed points.
