@@ -113,7 +113,7 @@ The first visualization will be a network that connects players who have played 
 
 <img src="/img/network_select.png" alt="network_select" width="1100"/>
 
-It will be possible to move the nodes with the mouse to make the network move.
+It will be possible to move the nodes with the mouse to make the network move. Once moved, the node is frozen in its new location until the user clicks it again. This makes it easier to study a node even when there are many nodes on the page.
 
 <img src="/img/network_moving.png" alt="network_moving" width="200"/>
 
@@ -129,9 +129,9 @@ When we pass the mouse over the edge between two players, information will be di
 
 <img src="/img/network_edge.png" alt="network_edge" width="600"/>
 
-The courses on "web development", "Javascript", "D3.js" and "interactive" were useful to build this visualization.
+The courses on "web development", "Javascript", "D3.js" and "interactive" were useful to build this visualization. The future "graph" course could also be useful.
 
-_For the moment a minimal version is provided for milestone 2. Two problems remain here and are being debugged: the disappearance of the nodes after a while and the visualization that goes out of the frame. Also the information about links, the images in nodes and the slider for winners rank are being implemented and will be provided later. The case of images is particularly complex because it is complicated to automate correctly, so it is not part of the minimum product and remains an option for the future._
+_*For the moment this visualization is being debugged, so it is not provided in the skeleton of the site but will be present in the final product. In addition, the case of images is particularly complex so it is not part of the minimum product and remains an option for the future.*_
 
 #### Tab 2: World map visualisation
 The second visualization will be a map of the world. The map will contain colored moving circles and fixed points.
