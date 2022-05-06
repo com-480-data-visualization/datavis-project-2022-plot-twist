@@ -98,7 +98,6 @@ Our idea is original in the sense that it aims to show much more the links betwe
 
 **10% of the final grade**
 
-
 Our final product will take the form of a website. On the principal page, animated videos of the visualizations will be shown, and the user could select one by clicking on them. No particular order will be privileged.
 We plan to include a minimal amount of text on each page, just enough to let the user explore the data by him or herself.
 
@@ -121,11 +120,11 @@ A slider will also enable to choose the year or the range of Winners rank. Inspi
 
 <img src="/img/network_curseur.png" alt="network_curseur" width="300"/>
 
-When we pass the mouse over a node (player), information about the player will be displayed with for instance: the number of matches played in ATP by series per year, the number of wins and the number of losses according to the year/the tournament/the type of court/the type of surface, his nationality, his weight, his year of start as a pro and his playing hand, a list with his main opponents. Inspiration: https://sylhare.github.io/2020/06/10/Advanced-node-network-graph-d3.html.
+When we pass the mouse over a node (player), information about the player will be displayed for instance: the number of matches played in ATP by series per year, the number of wins, and the number of losses according to the year/the tournament/the type of court/the type of surface, his nationality, his weight, his year of start as a pro and his playing hand, a list with his main opponents. Inspiration: https://sylhare.github.io/2020/06/10/Advanced-node-network-graph-d3.html.
 
 <img src="/img/network_joueur.png" alt="network_joueur" width="400"/>
 
-When we pass the mouse over the edge between two players, information will be displayed with the characteristics of the matches. For instance: locations, tournaments, dates, series, courts, surfaces, rounds, winners, ranks and points of the players at the beginning of the tournament, number of games won by each player for each set, number of sets won by each player, comments, odds. Inspiration: https://sylhare.github.io/2020/06/10/Advanced-node-network-graph-d3.html.
+When we pass the mouse over the edge between two players, information will be displayed with the characteristics of the matches. For instance: locations, tournaments, dates, series, courts, surfaces, rounds, winners, ranks, and points of the players at the beginning of the tournament, number of games won by each player for each set, number of sets won by each player, comments, odds. Inspiration: https://sylhare.github.io/2020/06/10/Advanced-node-network-graph-d3.html.
 
 <img src="/img/network_edge.png" alt="network_edge" width="600"/>
 
@@ -137,7 +136,7 @@ For information, the first versions of the html/css/js files are provided in the
 #### Tab 2: World map visualisation
 The second visualization will be a map of the world. The map will contain colored moving circles and fixed points.
 
-Each circle corresponds to a player from the dataset, the movement of the circle on the map corresponds to the path through the cities where the player participated in matches. 
+Each circle corresponds to a player from the dataset, and the movement of the circle on the map corresponds to the path through the cities where the player participated in matches. 
 The fixed point corresponds to the cities where matches are played, and information about the name of the tournaments it hosts.
 New players appear with a fade-in at the location of their first tournament and similarly disappear with a fade-out after the last match.
 
@@ -150,7 +149,7 @@ The broad goal of the visualization is to visualize the geographical movements o
 More precisely, we want to reveal patterns at different times and geographical scales, for instance, inside a given year, what is the usual schedule of tournaments for players? Can we observe that the participants of the tournament share a similar ranking, or are the levels of players uniformly distributed?
 On a time scale of several years, this visualization can enable us to visualize the emergence of new tournaments or the evolution of their popularity.
 
-We provided a first minimal working example of the visualization. There are further details to implement, test different alternative and select one. These include:
+We provided a first minimal working example of the visualization. There are further details to implement, test different alternatives and select one. These include:
 * Adding information about the tournaments.
 * Dealing with slow points that seem fixed. We plan to make these circles transparent and increase their opacity once they are near their final position.
 * The placement of the zoomed-in map of Europe. Dealing with zoom in general.
@@ -161,15 +160,15 @@ An image illutrating the visualization:
 <img src="/img/map_maquette.png" alt="maquette" width="1200"/>
 The projection we used was the Winkel tripel. We didn't choose the polar azimuthal equidistant projection, even if it would have reduced the teleportation at the border. We thought that users would not have been familiar with it, and would have been too confused to precisely understand the many movements happening at the same time. 
 
-We used `d3` as the main visualization tool, and the `d3-geo` package to deal with geographical interpolation and projection. To ease the development, we used an `òbservablehq` notebook. Moreover, the lectures on maps, colors perception, interaction, "designing viz" and "do and don't in viz" were all useful to design this visualization.
+We used `d3` as the main visualization tool, and the `d3-geo` package to deal with geographical interpolation and projection. To ease the development, we used an `òbservablehq` notebook. Moreover, the lectures on maps, color perception, interaction, "designing viz" and "do and don't in viz" were all useful to design this visualization.
 
 #### Tab 3: Bar chart race
 
-* Two bar charts one represeting the country ranking per year (accumulated number of match wins) and another for the players ranking with respect to their accumulated ATP points per year.
+* Two bar charts one representing the country ranking per year (accumulated number of match wins) and another for the players ranking with respect to their accumulated ATP points per year.
 
 * Minimal Viable Product :
     * Simple bar chart race with the year advancing in the bottom right corner
-    * Different colors for the different entities (countries / players)
+    * Different colors for the different entities (countries/players)
 
 * Further developments:
     * Add a timeline for the years so we can select the year of interest.
@@ -177,11 +176,11 @@ We used `d3` as the main visualization tool, and the `d3-geo` package to deal wi
     * For the countries, another metric that can be tested is the number of matches won divided by the number of matches played.
     * (Optional) Test to see if a fixed scaling instead of moving one is more aesthetically pleasing.
 
-The courses concerning "Design for Data Viz", "Color Pereception" "Javascript", "D3.js" and "Interacction" were used to help build this visualization. To ease the development, we used an òbservablehq notebook.
+The courses concerning "Design for Data Viz", "Color Perception" "Javascript", "D3.js" and "Interaction" were used to help build this visualization. To ease the development, we used an observablehq notebook.
 
 #### Tab 4: Slot Machine (optional, to be implemented if we have time)
 
-The goal would be to implement a slot machine that chooses randomly 2 players and displays statistics about their last matches between these 2 players. There is no MVP for this tab as it is an optional and further development of our website. The courses concerning "Design for Data Viz", "Color Pereception" "Javascript", "D3.js" and "Interacction" were used to help build this visualization. 
+The goal would be to implement a slot machine that chooses randomly 2 players and displays statistics about their last matches between these 2 players. There is no MVP for this tab as it is an optional and further development of our website. The courses concerning "Design for Data Viz", "Color Perception" "Javascript", "D3.js" and "Interaction" were used to help build this visualization. 
 
 <img src="/img/slot.png" alt="slot" width="1100"/>
 
