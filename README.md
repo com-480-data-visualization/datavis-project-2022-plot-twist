@@ -194,7 +194,3 @@ The goal would be to implement a slot machine that chooses randomly 2 players an
 
 [Website](https://assiaoua.github.io/tennis-data-story/) | [Github](https://github.com/assiaoua/tennis-data-story) linked to the website | [Process book]() | [Screencast] ()
 
-## Late policy
-
-- < 24h: 80% of the grade for the milestone
-- < 48h: 70% of the grade for the milestone
