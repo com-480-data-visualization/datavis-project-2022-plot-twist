@@ -192,5 +192,5 @@ The goal would be to implement a slot machine that chooses randomly 2 players an
 
 **80% of the final grade**
 
-[Website](https://assiaoua.github.io/tennis-data-story/) | [Github of to the website ](https://github.com/assiaoua/tennis-data-story)| [Process book](https://github.com/com-480-data-visualization/datavis-project-2022-plot-twist/blob/main/Process%20book%20DV.pdf) | [Screencast] ()
+[Website](https://assiaoua.github.io/tennis-data-story/) | [Github of the website ](https://github.com/assiaoua/tennis-data-story)| [Process book](https://github.com/com-480-data-visualization/datavis-project-2022-plot-twist/blob/main/Process%20book%20DV.pdf) | [Screencast] ()
 
