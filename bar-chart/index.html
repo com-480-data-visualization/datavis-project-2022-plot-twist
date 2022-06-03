@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.0.0/d3.js"></script>
+	<script src="http://d3js.org/d3.v5.min.js"></script>
+	<script src="https://d3js.org/d3-array.v2.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div id="observablehq-chart-052eb3bb"></div>
+  <div id="observablehq-viewof-keyframe-052eb3bb"></div>
+  <p>Credit: <a href="https://observablehq.com/@assiaoua/bar-chart-race-with-scrubber-players">Bar Chart Race with Scrubber Players by assiaoua</a></p>
+  
+  <script type="module">
+  import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+  import define from "https://api.observablehq.com/@assiaoua/bar-chart-race-with-scrubber-players.js?v=3";
+  new Runtime().module(define, name => {
+    if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-052eb3bb"));
+    if (name === "viewof keyframe") return new Inspector(document.querySelector("#observablehq-viewof-keyframe-052eb3bb"));
+    return ["update"].includes(name);
+  });
+  </script>
+
+<div id="observablehq-chart-b85d0446"></div>
+<div id="observablehq-update-b85d0446"></div>
+<p>Credit: <a href="https://observablehq.com/@assiaoua/bar-chart-race-with-scrubber">Bar Chart Race with Scrubber by assiaoua</a></p>
+
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@assiaoua/bar-chart-race-with-scrubber.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-b85d0446"));
+  if (name === "update") return new Inspector(document.querySelector("#observablehq-update-b85d0446"));
+});
+</script>
+  </body>
+</html>
